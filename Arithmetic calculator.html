@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arithmetic Calculator</title>
+        <script language="javascript" type="text/javascript">
+                function Addition()
+                {
+                        a=Number(document.calculator.no_1.value);
+                        b=Number(document.calculator.no_2.value);
+                        c=a+b;
+                        document.calculator.result.value=c;
+                }
+                function Subraction()
+                {
+                        a=Number(document.calculator.no_1.value);
+                        b=Number(document.calculator.no_2.value);
+                        c=a-b;
+                        document.calculator.result.value=c;
+                }
+                function Multiplication()
+                {
+                        a=Number(document.calculator.no_1.value);
+                        b=Number(document.calculator.no_2.value);
+                        c=a*b;
+                        document.calculator.result.value=c;
+                }
+                function Division()
+                {
+                        a=Number(document.calculator.no_1.value);
+                        b=Number(document.calculator.no_2.value);
+                        c=a/b;
+                        document.calculator.result.value=c;
+                }
+                function Modulous()
+                {
+                        a=Number(document.calculator.no_1.value);
+                        b=Number(document.calculator.no_2.value);
+                        c=a%b;
+                        document.calculator.result.value=c;
+                }
+                function Power()
+                {
+                        a=Number(document.calculator.no_1.value);
+                        b=Number(document.calculator.no_2.value);
+                        e=1;
+                        for(d=1;d<=b;d++){
+                                e=a*e;
+                        }
+                        document.calculator.result.value=e;
+                }
+        </script>
+</head>
+<body>
+	<h1>Arithmetic Calculator</h1>
+	<form name="calculator">
+		<fieldset>
+			<legend>Arithmetic calculator</legend>
+			<p>
+				<label>Number 1:</label>
+				<input type = "text"
+                 id = "myText"
+                 value = "Number 1" name="no_1" />
+        </p>
+        <p>
+				<label>Number 2:</label>
+				<input type = "text"
+                 id = "myText"
+                 value = "Number 2" name="no_2" />
+        </p>
+        <p>
+				<label>Get result</label>
+				<input type = "text"
+                 id = "myText"
+                 value = "result" name="result" />
+        </p>
+        <table>
+        	<tr>
+        		<td><button type="button" onclick="javascript:Addition()">ADD</button></td>
+        		<td><button type="button" onclick="javascript:Subraction()">SUB</button></td>
+        		<td><button type="button" onclick="javascript:Multiplication()">MUL</button></td>
+        		<td><button type="button" onclick="javascript:Division()">DIV</button></td>
+        		<td><button type="button" onclick="javascript:Modulous()">MOD</button></td>
+                        <td><button type="button" onclick="javascript:Power()">POWER</button></td>
+        	</tr>
+        </table>
+</fieldset>
+</form>
+</body>
+</html>
