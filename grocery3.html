@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grocery List</title>
+	<style type="text/css">
+		.cool{
+			background-color: aqua;
+		}
+
+		.hot{
+			background-color: red;
+		}
+
+		.normal{
+			background-color: orange;
+		}
+
+		.mylist{
+			list-style-type: none;
+		}
+
+	</style>
+	<script type="text/javascript">
+		var elements = document.getElementByTagName('li');
+		if(elements.length>0){
+			var el = elements[0];
+			el.className = 'cool';
+
+		}
+
+	</script>
+</head>
+<body>
+<h1 id="header">List King</h1>
+<h2>Buy Groceries</h2>
+<ul class="mylist">
+	<li id="one" class="cool"><em>Fresh</em>figs</li>
+	<li id="two" class="hot">Pine Nuts</li>
+	<li id="three" class="hot">honey</li>
+	<li id="four" class="normal">balsamic vinegar</li>
+</ul>
+</body>
+</html>
