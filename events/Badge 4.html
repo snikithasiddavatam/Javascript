@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Badge 3</title>
+	<style type="text/css">
+		.dot {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.color{
+	height: 100px;
+  width: 100px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.colorg{
+	height: 100px;
+  width: 100px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+	</style>
+</head>
+<body>
+    <span class="dot" ondblclick="change()"></span>
+    <script type="text/javascript">
+    	function change(){
+    		var elrandom=Math.random(0, 1);
+    		var doc = document.getElementsByTagName('span')[0];
+            if(elrandom>0.5){
+            	doc.className='color';
+            }else{
+            	doc.className='colorg';
+            }
+    	}
+    </script>
+</body>
+</html>

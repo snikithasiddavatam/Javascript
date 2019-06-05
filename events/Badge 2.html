@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Badge 3</title>
+	<style type="text/css">
+		.dot {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+	</style>
+
+</head>
+<body>
+    <span class="dot" onmouseover="circle()"></span>
+    <script type="text/javascript">
+    	function circle(){
+    		var circle = document.getElementsByClassName('dot')[0];
+            circle.style.display='none';
+    	}
+    </script>
+</body>
+</html>
